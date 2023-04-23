@@ -1,0 +1,12 @@
+<div class="form-group">
+    <label for="productName" >Product Name:</label>
+    <input type="text"  #pname class="form-control" placeholder="Product Name..">
+</div>
+<div class="form-group">
+    <label for="pDescr" >Product Descrption:</label>
+   <textarea  id="PDescr" #pDescr rows="5" class="form-control" placeholder="Product Descrption.."></textarea>
+</div>
+<div class="form-group align-right mt-2">
+ <button class="btn btn-primary" (click)="onclickBtn(pname ,pDescr,'product')">Add product</button>&nbsp;
+ <button class="btn btn-primary" (click)="onclickBtn(pname ,pDescr,'catlog')">Add catlog</button>
+</div>
